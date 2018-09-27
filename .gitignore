@@ -1,0 +1,6 @@
+# npm
+node_modules/*
+
+# osx
+**/*.DS_Store
+.DS_Store
