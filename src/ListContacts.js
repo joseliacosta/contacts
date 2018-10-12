@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 
-class ListContacts extends Component {
-  render() {
+function ListContacts(props) {
     return (
       <ol className='contact-list'>
-        {this.props.contacts.map((contact) => (
+        {props.contacts.map((contact) => (
           <li className='contact-list-item'>
             <div className='contact-avatar' style={{ backgroundImage: `url(${contact.avatarURL})` }} />
             <div className='contact-details'>
@@ -19,7 +18,6 @@ class ListContacts extends Component {
         }
       </ol>
     )
-  }
 }
 
 export default ListContacts
